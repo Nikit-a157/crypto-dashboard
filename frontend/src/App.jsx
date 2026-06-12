@@ -90,7 +90,7 @@ function App() {
     const cappedRate = Math.min(Math.max(rawAnnualRate, -0.80), 3.00); 
 
     try {
-      const response = await fetch('http://localhost:8080/api/analytics/simulate', {
+      const response = await fetch('https://crypto-dashboard-backend-da0u.onrender.com/api/analytics/simulate', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify({
